@@ -12,7 +12,7 @@ header .container, main .container, footer .container {
   margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h4, h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -23,8 +23,8 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-
+h1 {
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-size: 3em;
   color: #b33;
@@ -59,7 +59,7 @@ main {
     padding: 5px;
 }
 
-.tabs a span.active {
+.tabs a .active {
     background: #eee;
 }
 
@@ -69,7 +69,8 @@ main .content {
     background: #eee;
 }
 
-main .content h3 {
+h3 {
+    font-family: 'Ubuntu', sans-serif;
     border-radius: 5px;
     color: #999;;
     background: #ddd;
@@ -77,7 +78,7 @@ main .content h3 {
     margin: 20px 0 10px 0;
 }
 
-main .content h3:first-child {
+h3:first-child {
     margin-top: 0;
 }
 
@@ -100,7 +101,7 @@ main .content button {
 
 main .content p {
     color: red;
-    margin: 30px 0 0px 0;
+    margin: 30px 0 0 0;
 }
 
 main .content p:first-child {
@@ -123,7 +124,8 @@ footer .contact {
   width: 570px;    
 }
 
-footer h5 {
+h5 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.25em;
     margin-bottom: 20px;
 }
