@@ -14,7 +14,7 @@ twitter.stream(
     { track: ["awesome"] },
     function(stream) {
         stream.on('data', function(tweet) {
-            if (tweet.text.indexOf("awesome") >= 0) {
+            if (tweet.text.indexOf("awesome") > -1) {
                 // increment the awesome counter
                 counts.awesome = counts.awesome + 1;
             }
