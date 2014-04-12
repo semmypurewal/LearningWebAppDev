@@ -30,6 +30,10 @@ var express = require("express"),
         
 app.use(express.static(__dirname + "/client"));
 
+// tell Express to parse incoming
+// JSON objects
+app.use(express.urlencoded());
+
 http.createServer(app).listen(3000);
 
 // This route takes the place of our
@@ -37,4 +41,16 @@ http.createServer(app).listen(3000);
 // Chapter 5
 app.get("/todos.json", function (req, res) {
     res.json(toDos);
+});
+
+app.post("/todos", function (req, res) {
+    // the object is now stored in req.body
+    var newToDo = req.body;
+
+    console.log(newToDo);
+
+    toDos.push(newToDo);
+
+    // send back a simple object
+    res.json({"message":"You posted to the server!"});
 });
