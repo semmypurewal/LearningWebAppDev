@@ -46,6 +46,8 @@ var main = function () {
                 });
 
                 $content = $("<div>").append($input).append($button);
+               /* Alternatively append() allows multiple arguments so the above
+                can be done with $content = $("<div>").append($input, $button); */
             }
 
             $("main .content").append($content);
