@@ -1,0 +1,18 @@
+main {
+    width: 500px;
+    margin: auto;
+    background: gray;
+    overflow: auto;
+}
+
+nav {
+    width: 100px;
+    float: right;
+}
+
+p.content {
+    margin: 0; /* remove the default margin on p */
+    padding: 10px;
+    float: left;
+    width: 380px; /* 400 - 2*10 = 380 */
+}
