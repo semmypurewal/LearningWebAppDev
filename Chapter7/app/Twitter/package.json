@@ -1,0 +1,8 @@
+{
+    "name": "tweet_counter",
+    "description": "tweet counter example for learning web app development",
+    "dependencies": {
+	"ntwitter":"0.5.x",
+	"redis":"0.9.x"
+    }
+}
