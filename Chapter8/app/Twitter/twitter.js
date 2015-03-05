@@ -14,7 +14,7 @@ twitter = ntwitter(credentials);
 // set up our services
 if (process.env.VCAP_SERVICES) {
     services = JSON.parse(process.env.VCAP_SERVICES);
-    redisCredentials = services["rediscloud-n/a"][0].credentials;
+    redisCredentials = services["rediscloud"][0].credentials;
 } else {
     redisCredentials = {
 	"hostname": "127.0.0.1",
