@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    float: left;
+    background:darkgray;
+}
+
+main {
+    background:lightgray;
+}
+
+footer {
+    background:gray;
+    clear: both;
+}
