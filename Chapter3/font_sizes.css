@@ -1,0 +1,19 @@
+body {
+    font-size: 100%;     /* this sets the base font size for everything */
+}
+
+h1 {
+    font-size: xx-large; /* sets it relative to the base font-size */
+}
+
+h2 {
+    font-size: x-large;
+}
+
+.important {
+    font-size: larger;   /* makes it a little larger */
+}
+
+.onePointTwo {
+    font-size: 1.5  em;    /* sets it to 1.2 times the base size */
+}

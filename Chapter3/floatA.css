@@ -1,0 +1,16 @@
+main {
+    width: 500px;
+    margin: auto;
+    background: gray;
+}
+
+nav {
+    /* uncomment the next line to get a border around the nav */
+    /* border: 3px solid black; */
+    width: 200px;
+    float: right;
+}
+
+p {
+  margin: 0; /* zero out the default margin */
+}
