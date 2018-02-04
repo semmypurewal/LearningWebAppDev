@@ -11,7 +11,7 @@ app.use(express.bodyParser());
 
 if (process.env.VCAP_SERVICES) {
     services = JSON.parse(process.env.VCAP_SERVICES);
-    mongoUrl = services["mongolab"][0].credentials.uri;
+    mongoUrl = services["mlab"][0].credentials.uri;
     console.log(process.env.VCAP_SERVICES);
 }
 
