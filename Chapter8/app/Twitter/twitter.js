@@ -1,7 +1,7 @@
 var ntwitter = require("ntwitter"),
     redis = require("redis"), // require the redis module
     credentials = require("./credentials.json"),
-    redisClient,
+    client,
     counts = {},
     twitter,
     services,
